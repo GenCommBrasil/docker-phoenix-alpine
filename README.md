@@ -12,7 +12,7 @@ Wercker CI supports Alpine images, although it is necessary to explicitly specif
 
 ```
 box:
-	id: rakutenbrasil/phoenix-alpine
+	id: rakutenbr/phoenix-alpine
 	cmd: /bin/sh
 ```
 
