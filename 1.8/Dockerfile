@@ -35,6 +35,10 @@ RUN apk add --update nodejs nodejs-npm
 # install git as a dependecy for fetching dependencies when using wercker
 RUN apk add git
 
+# Dependencies for RKPCoreEx:
+RUN apk add postgresql
+
+
 # Dependencies for the AppSignal for Elixir package version 1.7.0 and newer
 RUN apk add --update alpine-sdk coreutils
 
