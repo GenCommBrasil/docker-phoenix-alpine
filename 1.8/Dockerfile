@@ -35,9 +35,14 @@ RUN apk add --update nodejs nodejs-npm
 # install git as a dependency for fetching dependencies when using wercker
 RUN apk add git
 
+
 # install pip as a dependency in order to be able to install aws cli and deploy when using wercker
 RUN apk add py-pip
 RUN pip install awscli
+
+
+# Dependencies for RKPCoreEx:
+RUN apk add postgresql
 
 # Dependencies for the AppSignal for Elixir package version 1.7.0 and newer
 RUN apk add --update alpine-sdk coreutils
